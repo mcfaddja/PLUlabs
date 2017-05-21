@@ -1,0 +1,28 @@
+1.  Name: Jonathan McFadden
+2.  E-Mail: mcfaddja@plu.edu
+    Phone: (253)-582-3915
+3.  Class Year: Freshman
+4.  Intended Majors: Physics and Mathematics
+5.  Copmuter expirience: Setting up networks (wireless and wired),
+			Running datamangement software and copmuterized
+			timing systems for swim meets.  No programing
+			expirience.
+6.  Mathematics courses: AP Calculus AB (5)
+			AP Calculus BC (4)
+			Math 152
+			Math 253 (currently enrolled)
+7.  Hometown: Lakewood, WA
+8.  Favorite Activities: Swimming, Water polo, Scuba Diving, playing strategy
+			Games on my computer, and building and upgrading my
+			computer.
+9.  I am interested in learning more about computer science and engineering,
+	these feilds have always fascinated me, and I enjoy having fun.
+10. Answers to questions about the computer:
+	1. This computer has 1 3 1/2 inch floppy drive (a:); 1 20 Gb Hard
+		Drive (c:); 1 CD-ROM drive (d:); and is connected to the 25
+		GB Hard Drive on the "schemp" server (x:).
+	2. There 22 folders on the top level of drive c:
+	3. The MultiEd32 program is on the C: drive in the MutilEd folder
+		(path C:\MultiEd)
+	4. This computer has 256 MB of RAM
+	5. This computer's full internet name is CSCE10187

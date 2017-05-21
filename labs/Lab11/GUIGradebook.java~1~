@@ -1,0 +1,139 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.text.*;
+
+public class GUIGradebook extends JFrame implements ActionListener {
+	private static final int FRAME_WIDTH    = 400;
+	private static final int FRAME_HEIGHT   = 500;
+	private static final int FRAME_X_ORIGIN = 400;
+	private static final int FRAME_Y_ORIGIN = 150;
+	
+	private JLabel scoreLabel;
+	private JTextField scoreField;
+	private JLabel countLabel;
+	private JTextField countField;
+	private JButton statsButton;
+	private JButton scoresButton;
+	private JButton clearButton;
+	private JTextArea recordArea;
+	private JScrollPane recordAreaScroller;
+	
+	private JMenu gradeMenu;
+	private JMenuBar gradeMenuBar;
+	private JMenuItem statsDisplay;
+	private JMenuItem scoresDisplay;
+	private JMenuItem clearDisplay;
+	
+	
+	double scores [];
+	double mean;
+	double stdDev;
+	int count;
+	
+	
+	
+	public GUIGradebook() {
+		Container gradePane;
+		setTitle			( "A simple Gradebook" );
+		setSize			( FRAME_WIDTH, FRAME_HEIGHT );
+		setLocation		( FRAME_X_ORIGIN, FRAME_Y_ORIGIN );
+		gradePane = getContentPane();
+		gradePane.setLayout(null);
+		gradePane.setBackground(Color.white);
+		
+		gradeMenu = new JMenu("Display");
+		
+		statsDisplay = new JMenuItem("Statistics");
+		statsDisplay.addActionListener( this );
+		gradeMenu.add( statsDisplay );		
+		
+		scoresDisplay = new JMenuItem("Scores");
+		scoresDisplay.addActionListener( this );
+		gradeMenu.add( scoresDisplay );	
+		
+		clearDisplay = new JMenuItem("Clear");
+		clearDisplay.addActionListener( this );
+		gradeMenu.add( clearDisplay );	
+		
+		gradeMenuBar = new JMenuBar();
+		setJMenuBar(gradeMenuBar);
+		gradeMenuBar.add(gradeMenu);
+		
+		scoreLabel = new JLabel();
+		scoreLabel.setBounds( 40, 40, 80, 30 );
+		scoreLabel.setText("Input Score: " );
+		gradePane.add(scoreLabel);
+		
+		scoreField = new JTextField();
+		scoreField.setBounds( 130, 40, 70, 30 );
+		scoreField.setBorder(BorderFactory.createLineBorder(Color.black));
+		gradePane.add(scoreField);
+		
+		scoreField.addActionListener(this);
+		
+		countLabel = new JLabel();
+		countLabel.setBounds( 250, 40, 40, 30 );
+		countLabel.setText( "Count: ");
+		gradePane.add(countLabel);
+		
+		countField = new JTextField();
+		countField.setBounds( 300, 40, 50, 30 );
+		countField.setBorder(BorderFactory.createLineBorder(Color.black));
+		gradePane.add(countField);
+		
+		statsButton = new JButton();
+		statsButton.setBounds( 80, 100, 230, 30 );
+		statsButton.setText( "Statitics" );
+		gradePane.add(statsButton);
+		
+		statsButton.addActionListener(this);
+		
+		scoresButton = new JButton();
+		scoresButton.setBounds( 80, 140, 230, 30 );
+		scoresButton.setText( "Display Scores" );
+		gradePane.add(scoresButton);
+		
+		scoresButton.addActionListener(this);
+		
+		clearButton = new JButton();
+		clearButton.setBounds( 80, 180, 230, 30 );
+		clearButton.setText( "Clear Gradebook" );
+		gradePane.add(clearButton);
+		
+		clearButton.addActionListener(this);
+		
+		recordArea = new JTextArea();
+		recordArea.setEditable(false);
+		recordAreaScroller = new JScrollPane(recordArea);
+		recordAreaScroller.setBounds( 75, 230, 240, 205);
+		recordAreaScroller.setBorder(BorderFactory.createLineBorder(Color.black));
+		gradePane.add(recordAreaScroller);
+		
+		setDefaultCloseOperation ( EXIT_ON_CLOSE );
+		}
+		
+	public void actionPerformed ( ActionEvent event ) {
+		Object evt = event.getSource();
+		
+		if 
+		}
+	
+	public static void averageIt() {
+		
+		}
+	
+	public static void stdDev() {
+		
+		}
+		
+	public static void strechArray() {
+		
+		}
+	
+	public static void main ( String[] args ) {
+		GUIGradebook grade = new GUIGradebook();
+		grade.show();
+		}
+			
+	}

@@ -1,0 +1,8 @@
+public class students {
+	private double gPA;
+	private String name;
+	private String dOB;
+	private String adress;
+	}
+
+public String studentName ( name ) {
